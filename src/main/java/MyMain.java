@@ -2,14 +2,27 @@ public class MyMain {
 
     // Returns the number of odd numbers in mat
     public static int countOdds(int[][] mat) {
-        // YOUR CODE HERE
-        return -1;
+        int count=0;
+        for (int row=0; row< mat.length;row++){
+            for(int col=0; col<mat[0].length;col++){
+                if (mat[row][col]%2!=0){
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
     // Returns the largest value in mat
     public static int findLargest(int[][] mat) {
-        // YOUR CODE HERE
-        return -1;
+        int maxnum= mat[0][0];
+        for (int row=0; row< mat.length;row++){
+            for(int col=0; col<mat[0].length;col++){
+                if(mat[row][col]>maxnum){
+                    maxnum=mat[row][col];
+
+            }}}
+        return maxnum;
     }
 
     // Write a method that "left-shifts" each row in a 2D array.
@@ -17,7 +30,16 @@ public class MyMain {
     // shifted to the left by 1, with wraparound (the first value
     // should wrap around to the last entry in the row)
     public static int[][] leftShift(int[][] mat) {
-        // YOUR CODE HERE
+       int temp=mat[0][0];
+       int temp2=0;
+       temp2=mat[mat.length-1][mat[0].length-1];
+        for (int row = mat.length-1; row >0; row--) {
+            for (int col = mat[0].length-1; col >0; col--) {
+                mtempat[row][col-1]
+
+
+                }
+            }
         return null;
     }
 
